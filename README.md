@@ -17,5 +17,20 @@ cd CS-145-Final-Project/'GCN Model'
 ```bash
 pip install -r requirements.txt
 ```
-## Download [valid.pkl](https://www.dropbox.com/scl/fi/j7rqvgrb0w9e2hapkbbqw/valid.pkl?rlkey=mcwh6b1ia7mfkmns37id6fcdl&st=kf9xt1k0&dl=0) and [train.pkl](https://www.dropbox.com/scl/fi/1p90y15gx3e2tonlqvyug/train.pkl?rlkey=8l89tfwokzu9556iyybu0f7o1&st=3fucc06g&dl=0)
+
+### Download training set and validation set
+```bash
+wget https://www.dropbox.com/scl/fi/j7rqvgrb0w9e2hapkbbqw/valid.pkl?rlkey=mcwh6b1ia7mfkmns37id6fcdl&st=kf9xt1k0&dl=0
+wget https://www.dropbox.com/scl/fi/1p90y15gx3e2tonlqvyug/train.pkl?rlkey=8l89tfwokzu9556iyybu0f7o1&st=3fucc06g&dl=0
+```
+
+```bash
+mv 'train.pkl?rlkey=8l89tfwokzu9556iyybu0f7o1' train.pkl
+mv 'valid.pkl?rlkey=mcwh6b1ia7mfkmns37id6fcdl' valid.pkl
+```
+### Start training
+
+```bash
+python train.py --train_dir train.pkl --test_dir valid.pkl
+```
 
