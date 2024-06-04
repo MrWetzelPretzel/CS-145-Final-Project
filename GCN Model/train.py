@@ -8,7 +8,6 @@ import random
 import json
 import pickle
 import logging
-import optuna
 from torch.optim.lr_scheduler import _LRScheduler
 from models import  GCNModel
 from utils import *
