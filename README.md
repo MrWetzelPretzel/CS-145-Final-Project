@@ -33,4 +33,9 @@ mv 'valid.pkl?rlkey=mcwh6b1ia7mfkmns37id6fcdl' valid.pkl
 ```bash
 python train.py --train_dir train.pkl --test_dir valid.pkl
 ```
+### Download the predictions
 
+```bash
+from google.colab import files
+files.download('saved_model/res.json')
+```
