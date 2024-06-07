@@ -35,7 +35,5 @@ python train.py --train_dir train.pkl --test_dir valid.pkl
 ```
 ### Download the predictions
 
-```bash
-from google.colab import files
-files.download('saved_model/res.json')
-```
+The results are saved in the 'saved_model' directory with the name 'res.json'
+
