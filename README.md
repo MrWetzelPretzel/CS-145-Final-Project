@@ -6,6 +6,8 @@ Given each author’s profile, including author name and published papers, parti
 - Python 3.10
 - PyTorch 2.2.0+cu121
 
+- If using Google Colab, please ensure you are using T4 GPU runtime
+
 ## Getting Started
 
 ### Installation
